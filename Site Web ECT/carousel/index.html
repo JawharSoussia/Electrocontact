@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
+<html lang="en" data-bs-theme-value="dark">
   <head><script src="./"></script>
 
     <meta charset="utf-8">
@@ -103,7 +103,40 @@
   <body class="bbg">
     
 
-    
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle d-none">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>    
     
     <header>
       <div class=" bbg  moved" >
@@ -233,8 +266,8 @@
           <div class="card h-100">
             <img src="./public/effi.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">EIFFAGE</h5>
-              <p class="card-text">Fort de 20 ans de collaboration fructueuse, Eiffage réitère sa confiance à Nexans dans le domaine de la fourniture de bornes de recharge.</p>
+              <h5 class="card-title">Porsche</h5>
+              <p class="card-text">Construction de cables de voiture Porsche ,Recament la  collaboration avec Porsche qui réitère sa confiance à Nexans dans le domaine de la construction des cables des voitures.</p>
             </div>
           </div>
         </div>

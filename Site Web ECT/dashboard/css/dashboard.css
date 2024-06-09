@@ -18,7 +18,10 @@
     display: block;
   }
 }
-
+.bbg{
+  background-color: var(--bs-white);
+  color: #2470dc;
+}
 .sidebar .nav-link {
   font-size: .875rem;
   font-weight: 500;
@@ -35,7 +38,9 @@
 /*
  * Navbar
  */
-
+tr{
+  background-color: white;
+}
 .navbar-brand {
   padding-top: .75rem;
   padding-bottom: .75rem;

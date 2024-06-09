@@ -16,13 +16,16 @@ body {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  color: var(--bs-gg);
 }
 
 .form-signin input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  color: var(--bs-gg);
 }
 .bbg{
   background-color: var(--bs-gg);
+  color: white;
 }
