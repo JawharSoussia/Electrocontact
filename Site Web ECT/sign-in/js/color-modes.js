@@ -16,7 +16,7 @@
       return storedTheme
     }
 
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+   
   }
 
   const setTheme = theme => {
@@ -36,7 +36,7 @@
       return
     }
 
-    const themeSwitcherText = document.querySelector('#bd-theme-text')
+
     const activeThemeIcon = document.querySelector('.theme-icon-active use')
     const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
     const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
@@ -49,7 +49,7 @@
     btnToActive.classList.add('active')
     btnToActive.setAttribute('aria-pressed', 'true')
     activeThemeIcon.setAttribute('href', svgOfActiveBtn)
-    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
+    
     themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
 
     if (focus) {
@@ -64,17 +64,5 @@
     }
   })
 
-  window.addEventListener('DOMContentLoaded', () => {
-    showActiveTheme(getPreferredTheme())
-
-    document.querySelectorAll('[data-bs-theme-value]')
-      .forEach(toggle => {
-        toggle.addEventListener('click', () => {
-          const theme = toggle.getAttribute('data-bs-theme-value')
-          setStoredTheme(theme)
-          setTheme(theme)
-          showActiveTheme(theme, true)
-        })
-      })
-  })
+ 
 })()

@@ -29,3 +29,6 @@ body {
   background-color: var(--bs-gg);
   color: white;
 }
+.tblack{
+  color :var(--bs-gg)
+}
